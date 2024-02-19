@@ -1,0 +1,14 @@
+all compulsory fields_
+
+Name 
+Surname
+Email
+Cellphone number
+Age
+
+Medical Aid:
+Medical Aid: number
+
+Proof of payment/screenshot
+N$400
+(insert image)

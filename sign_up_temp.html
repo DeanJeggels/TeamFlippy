@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Event Sign-up</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function confirmIndemnity() {
+            return confirm("By submitting this form, I confirm that I have read and agree to the indemnity form.");
+        }
+    </script>
+</head>
+
+<body class="left-sidebar is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header-wrapper">
+            <div id="header" class="container">
+
+                <!-- Logo -->
+                <h1 id="logo"><a href="index.html">TeamFlippy</a></h1>
+
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="Events.html">Events</a></li>
+                        <li class="break"><a href="Products.html">Products</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </div>
+    <h2>Event Sign-up</h2>
+    <p>Send us an email with the following details in the following format</p>
+    <form action="mailto:philipseidler1@gmail.com" method="post" enctype="text/plain" onsubmit="return confirmIndemnity();">
+        <label for="name">Name:</label>
+
+        <label for="surname">Surname:</label>
+
+        <label for="cellphone">Cellphone number:</label>
+
+        <label for="age">Age:</label>
+
+        <label for="medicalAid">Medical Aid:</label>
+
+        <label for="medicalAidNumber">Medical Aid number:</label>
+
+
+        <label for="proofOfPayment">Proof of payment/screenshot as attachment:</label>
+
+        <p>Payment: N$380</p>
+
+        <input type="submit" value="Email">
+    </form>
+
+</body>
+
+</html>

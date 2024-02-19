@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Sign-up</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file if needed -->
+</head>
+<body>
+
+    <h2>Event Sign-up</h2>
+
+    <form id="signupForm" action="/submit" method="post" enctype="multipart/form-data">
+        <!-- Personal Information -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="cellphone">Cellphone Number:</label>
+        <input type="tel" id="cellphone" name="cellphone" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <!-- Medical Aid Information -->
+        <h3>Medical Aid Information</h3>
+
+        <label for="medicalAidName">Medical Aid:</label>
+        <input type="text" id="medicalAidName" name="medicalAidName" required>
+
+        <label for="medicalAidNumber">Medical Aid Number:</label>
+        <input type="text" id="medicalAidNumber" name="medicalAidNumber" required>
+
+        <!-- Proof of Payment -->
+        <h3>Proof of Payment</h3>
+
+        <label for="proofOfPayment">Proof of Payment/Screenshot:</label>
+        <input type="file" id="proofOfPayment" name="proofOfPayment" accept="image/*" required>
+
+        <!-- Indemnity Form Confirmation -->
+        <h3>Indemnity Form Confirmation</h3>
+
+        <label for="indemnityAgreement">
+            <input type="checkbox" id="indemnityAgreement" name="indemnityAgreement" required>
+            I confirm that I have read and agree to the terms of the indemnity form.
+        </label>
+
+        <button type="button" id="downloadFormButton" onclick="downloadIndemnityForm()">Download Form</button>
+
+        <!-- Event Fee -->
+        <h3>Event Fee</h3>
+
+        <label for="eventFee">Event Fee (N$):</label>
+        <input type="number" id="eventFee" name="eventFee" value="380" readonly>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Include JavaScript to handle form submission and download the form -->
+    <script src="signup.js"></script>
+    <script>
+        function downloadIndemnityForm() {
+            // Replace the URL with the actual path to your indemnity form
+            window.location.href = "Indemnity_Form.pdf";
+        }
+    </script>
+
+</body>
+</html>
