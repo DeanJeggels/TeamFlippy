@@ -2000,6 +2000,46 @@ input, select, textarea {
 		form textarea:focus {
 			background: #fff;
 		}
+	
+		/* Checkbox Styling */
+form input[type="checkbox"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: solid 2px #d2d7dc;
+	border-radius: 0.2em;
+	margin-right: 10px;
+	vertical-align: middle;
+	position: relative;
+	background: #f9fbfe;
+}
+
+form input[type="checkbox"]:checked {
+	background-color: #4CAF50;
+	border-color: #4CAF50;
+}
+
+form input[type="checkbox"]:checked::after {
+	content: '✔';
+	color: white;
+	font-size: 14px;
+	position: absolute;
+	left: 4px;
+	top: -8px;
+}
+
+/* Checkbox Label Styling */
+form label[for="terms"] {
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+	color: #52575c;
+	margin: 0 0 1em 0;
+	cursor: pointer;
+}
 
 	form textarea {
 		min-height: 7em;
