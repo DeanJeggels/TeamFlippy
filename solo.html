@@ -35,10 +35,15 @@
 					<!-- Contact Form -->
 					<section>
 						<form method="POST" action="https://formspree.io/f/xeoqodvz">
+						<!-- <form method="POST" action="https://formspree.io/f/myzyealp"> -->
 							<div class="row gtr-50">
+								<div class="col-12 col-12-mobile">
+									<input name="event" placeholder="Event: Solo 2km Swim" type="text" value="Solo 2km Swim" readonly required />
+								</div>
+								
                                 <div class="col-6 col-12-mobile">
                                 
-                                    <select name="age-category" id="age-category">
+                                    <select name="agecategory-age-gender" id="agecategory-age-gender">
                                         <option value="" disabled selected>Select your age group</option>
                                         <option value="Senior Category">Senior: 19 - 40</option>
                                         <option value="Junior Category">Junior: 18 and under</option>
@@ -50,11 +55,11 @@
                                     " type="text" required/>
 								</div>
 								<div class="col-6 col-12-mobile">
-									<input name="age" placeholder="Age: [Your Age and Date of Birth]" type="text" required />
+									<input name="agecategory-age-gender" placeholder="Age: [Your Age and Date of Birth]" type="text" required />
 								</div>
                                 <div class="col-6 col-12-mobile">
                                   
-                                    <select name="age-category" id="age-category">
+                                    <select name="agecategory-age-gender" id="agecategory-age-gender">
                                         <option value="" disabled selected>Gender</option>
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
@@ -68,11 +73,11 @@
                                 </div>
                                 
                                 <div class="col-12 col-12-mobile">
-									<input name="Medical aid name" placeholder="Medical Aid Name" type="text" />
+									<input name="Medical aid name" placeholder="Medical Aid Name" type="text" required/>
 								</div>
 
                                 <div class="col-12 col-12-mobile">
-									<input name="Medical aid name" placeholder="Medical Aid Number" type="text" />
+									<input name="Medical aid number" placeholder="Medical Aid Number" type="text" required/>
 								</div>
                                 <div class="col-12 col-12-mobile">
 									<input name="emergency name" placeholder="Emergency Contact Name: [Emergency Contact Name + Surname]
@@ -90,17 +95,24 @@
                                     </label>
                                 </div>
                                 <div class="col-12 col-12-mobile">
+									<p>Upload your proof of payment by clicking below and then return to this tab to finish registration:</p>
+									<a href="https://docs.google.com/forms/d/e/1FAIpQLSfn3_ZoGJQVL3sPQvKGB3BL8WduOdHOAlZVM_yFbi-S5TQAUA/viewform?usp=sf_link" target="_blank" class="button">Upload Proof of Payment</a>
+									<p>Note: Please use the same name and payment reference as in this form.</p>
+								</div>
+								<div class="col-12 col-12-mobile">
                                     <p>For payment, please see bank details below to complete your transaction. (N$270)</p>
 									<input name="payment reference" placeholder="Payment Reference (Will be crosschecked before entry confirmation)
                                     " type="text" required />
 								</div>
 								<div class="col-12">
+									<p>Submit your registration by clicking below:</p>
 									<ul class="actions">
 										<li><input type="submit" value="Click to Submit Registration" /></li>
 										<li><input type="reset" value="Clear form" /></li>
 									</ul>
 								</div>
 							</div>
+							
                             <section>
 								<header>
 									<h3>Bank Details</h3>

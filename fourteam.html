@@ -34,10 +34,14 @@
 					<!-- Contact Form -->
 					<section>
 						<form method="POST" action="https://formspree.io/f/xeoqodvz">
+						<!-- <form method="POST" action="https://formspree.io/f/myzyealp"> -->
 							<div class="row gtr-50">
+								<div class="col-12 col-12-mobile">
+									<input name="event" placeholder="Event: 4-team Relay Swim" type="text" value="4-team Relay Swim" readonly required />
+								</div>
                                 <div class="col-6 col-12-mobile">
                                 
-                                    <select name="twoteam-category" id="twoteam-category" required>
+                                    <select name="fourteam-category" id="twoteam-category" required>
                                         <option value="" disabled selected>Select Gender category</option>
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
@@ -60,16 +64,28 @@
                                     <input name="Captain's Email Address" placeholder="Captain's Email Address: [Captain's Email]" type="email" required />
                                 </div>
                                 <div class="col-6 col-12-mobile">
-                                    <input name="Team Member 1:" placeholder="Team Member 1: [Member 1 Name + Surname] & Email" type="email" required />
+                                    <input name="Team Member 1 name:" placeholder="Team Member 1: [Member 1 Name + Surname]" type="text" required />
+                                </div>
+								<div class="col-6 col-12-mobile">
+                                    <input name="Team Member 1 email:" placeholder="Team Member 1: Email" type="email" required />
                                 </div>
                                 <div class="col-6 col-12-mobile">
-                                    <input name="Team Member 2:" placeholder="Team Member 2: [Member 2 Name + Surname] & Email" type="email" required />
+                                    <input name="Team Member 2 name:" placeholder="Team Member 2: [Member 2 Name + Surname]" type="text" required />
+                                </div>
+								<div class="col-6 col-12-mobile">
+                                    <input name="Team Member 2 email:" placeholder="Team Member 2: Email" type="email" required />
                                 </div>
                                 <div class="col-6 col-12-mobile">
-                                    <input name="Team Member 3:" placeholder="Team Member 3: [Member 3 Name + Surname] & Email" type="email" required />
+                                    <input name="Team Member 3 name:" placeholder="Team Member 3: [Member 3 Name + Surname]" type="text" required />
+                                </div>
+								<div class="col-6 col-12-mobile">
+                                    <input name="Team Member 3 email:" placeholder="Team Member 3: Email" type="email" required />
                                 </div>
                                 <div class="col-6 col-12-mobile">
-                                    <input name="Team Member 4:" placeholder="Team Member 4: [Member 4 Name + Surname] & Email" type="email" required />
+                                    <input name="Team Member 4 name:" placeholder="Team Member 4: [Member 4 Name + Surname]" type="text" required />
+                                </div>
+								<div class="col-6 col-12-mobile">
+                                    <input name="Team Member 4 email:" placeholder="Team Member 4: Email" type="email" required />
                                 </div>
                                 
                                 <div class="col-12 col-12-mobile">
@@ -95,17 +111,24 @@
                                     </label>
                                 </div>
                                 <div class="col-12 col-12-mobile">
+									<p>Upload your proof of payment by clicking below and then return to this tab to finish registration:</p>
+									<a href="https://docs.google.com/forms/d/e/1FAIpQLSfn3_ZoGJQVL3sPQvKGB3BL8WduOdHOAlZVM_yFbi-S5TQAUA/viewform?usp=sf_link" target="_blank" class="button">Upload Proof of Payment</a>
+									<p>Note: Please use the same name and payment reference as in this form.</p>
+								</div>
+								<div class="col-12 col-12-mobile">
                                     <p>For payment, please see bank details below to complete your transaction. (N$150 per swimmer)</p>
-									<input name="payment reference" placeholder="Payment References seperated by comma (Will be crosschecked before entry confirmation)
+									<input name="payment reference" placeholder="Payment Reference (Will be crosschecked before entry confirmation)
                                     " type="text" required />
 								</div>
 								<div class="col-12">
+									<p>Submit your registration by clicking below:</p>
 									<ul class="actions">
 										<li><input type="submit" value="Click to Submit Registration" /></li>
 										<li><input type="reset" value="Clear form" /></li>
 									</ul>
 								</div>
 							</div>
+						
                             <section>
 								<header>
 									<h3>Bank Details</h3>
