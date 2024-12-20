@@ -1,14 +1,40 @@
 <!DOCTYPE HTML>
-
 <html lang="en">
 
 <head>
     <title>Events</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
-    <meta name="description" content="Your ultimate destination for all things swimming! TeamFlippy offers products, events, and a community for swimming enthusiasts." />
+    <meta name="description" content="Upcoming events hosted by TeamFlippy." />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="icon" type="image/x-icon" href="images/teamflippy logo.png" />
+    <link rel="icon" type="image/x-icon" href="images/teamflippy_logo.png" />
+    <style>
+        .event-banner {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            cursor: pointer;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+
+        .event-banner:hover {
+            transform: scale(1.05);
+        }
+
+        .event-date {
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            text-align: center;
+            margin: 20px auto;
+        }
+    </style>
 </head>
 
 <body class="left-sidebar is-preload">
@@ -17,183 +43,157 @@
         <!-- Header -->
         <div id="header-wrapper">
             <div id="header" class="container">
-
-                <!-- Logo -->
-                <h1 id="logo"><a href="index.html">About</a></h1>
-
-                <!-- Nav -->
-                <nav id="nav">
-                    <ul>
-						
-                        <li><a href="Events.html">Events</a></li>
+				<h1 id="logo"><a href="index.html">Home</a></h1>
+				<nav id="nav">
+					<ul>
+                        <li><a href="sponsor.html">Sponsor</a></li>
+						<li><a href="Events.html">Events</a></li>
 						<li class="break"><a href="Products.html">Products</a></li>
 						<li><a href="Contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-
-            </div>
+					</ul>
+				</nav>
+			</div>
         </div>
 
         <!-- Main -->
-		<div class="wrapper">
-			<!-- Banner section -->
-			<!-- <div id="banner">
-			
-				<img src="images/Event_Banner.jpg" alt="Banner Image" style="max-width: 100%; height: auto; width: 100%;">
-			</div> -->
-			<div class="container" id="main">
-				<div class="row gtr-150">
-					<div class="col-4 col-12-narrower">
-						<!-- Sidebar -->
-						<section id="sidebar">
-							<section>
-								<header>
-									<h3>Event Details</h3>
-								</header>
-								<p>The "Teamflippy's Open Water Splash" swim event is coming soon! Save the dates:</p>
-								<ul>
-									<li><strong>Event Date:</strong> 19 December 2024</li>
-									<li><strong>Time:</strong> 08:00 am</li>
-								</ul>
-							</section>
-							<!-- <section>
-								<header>
-									<h3>Download Indemnity Form</h3>
-								</header>
-								<p>Before signing up, please download and read the indemnity form:</p>
-								<ul class="actions">
-									<li><a href="Indemnity_Form.pdf" class="button" download>Download Form</a></li>
-								</ul>
-							</section> -->
-							<section>
-								<header>
-									<h3>Bank Details</h3>
-								</header>
-								<p>Make your event payment to the following bank account:</p>
-								<ul>
-									<li><strong>Bank:</strong> FNB</li>
-									<li><strong>Account Name:</strong> Team Flippy</li>
-									<li><strong>Account Number:</strong>  64281501013</li>
-									<li><strong>Branch:</strong> 280472 Swakopmund</li>
-									<li><strong>Reference:</strong> Your Initials + Surname</li>
-								</ul>
-							</section>
-							<section> 
-								<p>Excited? Sign up by selecting your category if interest below.</p>
-								<ul class="actions">
-<!-- 									<li><a href="kids.html" class="button">Kids</a></li> -->
-									<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd83CT4_hkyTqYFuWv3orr1b9nPE2ZFJvB6UokpbVLNK-WEJw/viewform" class="button">Kids</a></li>
-								</ul>
-								<ul class="actions">
-									
-									<li><a href="https://forms.gle/hpjnrvjnrbsNtwa76" class="button">Sandcastle Competition</a></li>
-								</ul>
-								<ul class="actions">
-<!-- 									<li><a href="solo.html" class="button">Solo</a></li> -->
-									<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd83CT4_hkyTqYFuWv3orr1b9nPE2ZFJvB6UokpbVLNK-WEJw/viewform" class="button">Solo</a></li>
-								</ul>
-								<ul class="actions">
-<!-- 									<li><a href="twoteam.html" class="button">2-Team Relay</a></li> -->
-									<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd83CT4_hkyTqYFuWv3orr1b9nPE2ZFJvB6UokpbVLNK-WEJw/viewform" class="button">2-Team Relay</a></li>
-								</ul>
-								<ul class="actions">
-<!-- 									<li><a href="fourteam.html" class="button">4-Team Relay</a></li> -->
-									<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd83CT4_hkyTqYFuWv3orr1b9nPE2ZFJvB6UokpbVLNK-WEJw/viewform" class="button">4-Team Relay</a></li>
-								</ul>
+        <div class="wrapper">
+            <div class="container" id="main">
+                <header>
+                    <h2>Events Calendar</h2>
+                    <p>Check out the 2025 Event Calender Posters and click on the event banners to learn more!</p>
+                </header>
+						<div class="row">
+
+                            <section class="col-6 col-12-narrower feature">
+								
+								<div class="image-wrapper first">
+									<a href="#" class="image featured first"><img src="images/events/posters/Costal Beach Series Poster.png" alt="BlackBeanie" /></a>
+								</div>
+		
+								
 							</section>
 							
-						</section>
-					</div>
-					<div class="col-8 col-12-narrower imp-narrower mx-auto text-center">
-						<!-- Content -->
-						<article id="content">
-							<header>
-								<p>Teamflippy's Open Water Splash powered by Bojo's Cafè</p>
-							</header>
-							<a href="#" class="image featured"><img src="images/Event_Poster.jpg" alt="" style="max-width: 100%; height: auto; width: 100%;"></a>
-							<p>Exciting news, entries are now open for the Teamflippy Open Water Splash. Get ready for an amazing event happening on December 19th at Mole Beach in Swakopmund, proudly powered by Bojo's.</p>
+							<section class="col-6 col-12-narrower feature">
 								
-								<p>This event is for everyone, no matter your swimming level. It’s set to be a fun and unforgettable day for the whole community. There are different categories you can join: the Brave Solo Swim, where you take on the full 2-kilometer swim on your own, the 2-Team Relay, where each swimmer completes 1 kilometer, and the 4-Team Relay, where you and three friends each swim 500 meters, making it a fun team challenge.</p>
-								
-								<p>We've also added two exciting new categories this year. The Masters Category is for swimmers aged 41 and over, giving experienced athletes a chance to shine. The 50m Kids Swim is open to all kids, and each child can bring one free adult to swim or cheer alongside them.</p>
-
-								<p>Entry fees are N$300 for the solo category, N$230 per swimmer for the 2-Team Relay, N$180 per swimmer for the 4-Team Relay, and N$150 for the kids' category, which includes one free adult. </p>
-						
-								<p>The event will also be live-streamed by Erongo TV, so everyone can join in the fun from home.</p>
-
-								<p>This is going to be a huge, successful event, and we want everyone to be a part of it. Join us for a day full of fun, fitness, and community spirit. </p>
-						
-								<p><strong>Don't miss out, sign up now!</strong></p>
-							</article>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		
-		
-						<!-- <div class="row features">
-							<section class="col-4 col-12-narrower feature">
 								<div class="image-wrapper first">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+									<a href="#" class="image featured first"><img src="images/events/posters/Coastal Open Water Calender.png" alt="BlackBeanie" /></a>
 								</div>
-								<header>
-									<h3>Dolor sit consequat magna</h3>
-								</header>
-								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-								vel sem sit dolor neque semper magna lorem ipsum.</p>
-								<ul class="actions">
-									<li><a href="#" class="button">Elevate my awareness</a></li>
-								</ul>
+		
+								
 							</section>
-							<section class="col-4 col-12-narrower feature">
-								<div class="image-wrapper">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+							<section class="col-6 col-12-narrower feature">
+								
+								<div class="image-wrapper first">
+									<a href="#" class="image featured first"><img src="images/events/posters/Teamflippy Costal Tour Run.png" alt="Mole to Mall" /></a>
 								</div>
-								<header>
-									<h3>Dolor sit consequat magna</h3>
-								</header>
-								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-								vel sem sit dolor neque semper magna lorem ipsum.</p>
-								<ul class="actions">
-									<li><a href="#" class="button">Elevate my awareness</a></li>
-								</ul>
+		
+								
 							</section>
-							<section class="col-4 col-12-narrower feature">
-								<div class="image-wrapper">
-									<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-								</div>
-								<header>
-									<h3>Dolor sit consequat magna</h3>
-								</header>
-								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-								vel sem sit dolor neque semper magna lorem ipsum.</p>
-								<ul class="actions">
-									<li><a href="#" class="button">Elevate my awareness</a></li>
-								</ul>
-							</section>
+
+							
+		
+							
 						</div>
 					</div>
-				</div> -->
+				</div>
+                
+                <!-- Event Listings -->
+                <div class="container">
+					<div class="event-date">December 19, 2024</div>
+                    <a href="Open_water_splash_results2024.html">
+                        <img src="images/events/banners/Open Water Splash Banner.png" alt="Splash 2024" class="event-banner">
+                    </a>
 
-			<!-- Footer -->
-            <div id="footer-wrapper">
-                <div id="footer" class="container">
-                    <header class="major">
-                        <h2>Connect with Us</h2>
-						<p>Stay connected and share your own stories of perseverance and triumph. Follow us on social media, join our community discussions, and be part of a movement that celebrates resilience and the pursuit of dreams.</p>
-                        <a href="Contact.html">Send us an Email or DM</a>
-                    </header>
-                    <ul class="divided icons col-12 col-12-mobile">
-                        <li class="icon brands fa-instagram"><a href="https://www.instagram.com/team.flippy?igsh=MTF50DBoNjJ5YnYwMw=="><span class="extra">instagram.com/</span>team.flippy</a></li>
-                    </ul>
+                    <div class="event-date">February 15, 2025</div>
+                    <a href="BeachSeries.html">
+                        <img src="images/events/banners/Beach Series Banner.png" alt="Beach Series (Swim or Run)" class="event-banner">
+                    </a>
+
+                    <div class="event-date">March 15, 2025</div>
+                    <a href="BeachSeries.html">
+                        <img src="images/events/banners/Beach Series Banner.png" alt="Beach Series (Swim or Run)" class="event-banner">
+                    </a>
+
+                    <div class="event-date">March 21, 2025</div>
+                    <a href="NeptuneSplash.html">
+                        <img src="images/events/banners/Neptune Splash Banner.png" alt="Neptune Splash" class="event-banner">
+                    </a>
+
+                    <div class="event-date">April 12, 2025</div>
+                    <a href="BeachSeries.html">
+                        <img src="images/events/banners/Beach Series Banner.png" alt="Beach Series (Swim or Run)" class="event-banner">
+                    </a>
+
+                    <div class="event-date">April 20, 2025</div>
+                    <a href="MoletoMallChallenge.html">
+                        <img src="images/events/banners/Mole to Mall Banner.png" alt="Mole to Mall Challenge" class="event-banner">
+                    </a>
+
+                    <div class="event-date">May 10, 2025</div>
+                    <a href="BeachSeries.html">
+                        <img src="images/events/banners/Beach Series Banner.png" alt="Beach Series (Swim or Run)" class="event-banner">
+                    </a>
+
+                    <div class="event-date">May 17, 2025</div>
+                    <a href="BlueAndPink.html">
+                        <img src="images/events/banners/Blue and Pink Run Banner.png" alt="Coastal Tour Run - Male Blue and Female Pink Run (Swakopmund)" class="event-banner">
+                    </a>
+
+                    <div class="event-date">June 14, 2025</div>
+                    <a href="LagoonDreamRun.html">
+                        <img src="images/events/banners/Lagoon Dream Run Banner.png" alt="Coastal Tour Run - Lagoon Dream Run (Walvis Bay)" class="event-banner">
+                    </a>
+
+                    <div class="event-date">July 12, 2025</div>
+                    <a href="DuneRun7.html">
+                        <img src="images/events/banners/Dune Run Banner.png" alt="Coastal Tour Run - Dune Run 7 (Walvis Bay)" class="event-banner">
+                    </a>
+
+                    <div class="event-date">August 9, 2025</div>
+                    <a href="SaltRushRun.html">
+                        <img src="images/events/banners/Salt Rush Banner.png" alt="Coastal Tour Run - Salt Rush Run (Walvis Bay)" class="event-banner">
+                    </a>
+
+                    <div class="event-date">September 13, 2025</div>
+                    <a href="XtremeOffRoadTriathlon.html">
+                        <img src="images/events/banners/Namib Xtreme Triathlon banner.png" alt="Xtreme Off-Road Triathlon" class="event-banner">
+                    </a>
+
+                    <div class="event-date">October 4, 2025</div>
+                    <a href="SwellSprint.html">
+                        <img src="images/events/banners/Enduro Sprint Banner.png" alt="Swell Sprint (Swim/Run and Cycle/Run Event)" class="event-banner">
+                    </a>
+
+                    <div class="event-date">November 8, 2025</div>
+                    <a href="DeepBlueChallenge.html">
+                        <img src="images/events/banners/Deep Blue Challenge Banner.png" alt="Deep Blue Challenge" class="event-banner">
+                    </a>
+
+                    <div class="event-date">December 19, 2025</div>
+                    <a href="Splash.html">
+                        <img src="images/events/banners/Open Water Splash Banner.png" alt="Splash" class="event-banner">
+                    </a>
                 </div>
             </div>
-            <div id="copyright" class="container">
-                <ul class="menu">
-                    <li>&copy; TeamFlippy. All rights reserved.</li> <li><a href="terms.html">Terms & Conditions</li><li>Development: <a href="https://ch-ise.co.za">CH-ISE</a></li>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer-wrapper">
+            <div id="footer" class="container">
+                <header class="major">
+                    <h2>Connect with Us</h2>
+                    <p>Stay connected and share your stories. Follow us on social media, and be part of our community.</p>
+                    <a href="Contact.html">Send us an Email or DM</a>
+                </header>
+                <ul class="divided icons col-12 col-12-mobile">
+                    <li class="icon brands fa-instagram"><a href="https://www.instagram.com/team.flippy"><span class="extra">instagram.com/</span>team.flippy</a></li>
                 </ul>
             </div>
+        </div>
+        <div id="copyright" class="container">
+            <ul class="menu">
+                <li>&copy; TeamFlippy. All rights reserved.</li> <li><a href="terms.html">Terms & Conditions</a></li><li>Development: <a href="https://ch-ise.co.za">CH-ISE</a></li>
+            </ul>
         </div>
     </div>
 
