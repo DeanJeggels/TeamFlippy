@@ -220,7 +220,7 @@ input, select, textarea {
 
 		header > p {
 			display: block;
-			color: #0687ef;
+			color: #42474c;
 			padding: 0.75em 0 1em 0;
 			font-size: 1.5em;
 			line-height: 1.5em;
@@ -262,11 +262,8 @@ input, select, textarea {
 }
 
 @media only screen and (max-width: 768px) {
-    .image-carousel {
-        width: 100%; /* Adjust the width of the carousel for smaller screens */
-        transform: translateX(0%); /* Initially center the first image */
-        margin-left: 0; /* Remove margin for centering */
-    }
+
+	
 }
 	.dots-wrapper {
 		position: absolute;
@@ -291,45 +288,56 @@ input, select, textarea {
 	
 	
 
-		@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 1280px) {
 
-			.container {
-				width: 960px;
-			}
-
+		.container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 0 20px;
 		}
 
-		@media screen and (max-width: 1080px) {
+	}
 
-			.container {
-				width: 100%;
-			}
+	@media screen and (max-width: 1080px) {
 
+		.container {
+			max-width: 100%;
+			margin: 0 auto;
+			padding: 0 20px;
 		}
 
-		@media screen and (max-width: 820px) {
+	}
 
-			.container {
-				width: 100%;
-			}
+	@media screen and (max-width: 820px) {
 
+		.container {
+			max-width: 100%;
+			margin: 0 auto;
+			padding: 0 20px;
 		}
 
-		@media screen and (max-width: 736px) {
+	}
 
-			.container {
-				width: 100%;
-			}
+	@media screen and (max-width: 736px) {
 
+		.container {
+			max-width: 100%;
+			margin: 0 auto;
+			padding: 0 20px;
 		}
 
-		@media screen and (max-width: 480px) {
+	}
 
-			.container {
-				width: 100%;
-			}
+	@media screen and (max-width: 480px) {
 
+		.container {
+			max-width: 100%;
+			margin: 0 auto;
+			padding: 0 0px;
 		}
+
+	}
+
 
 /* Row */
 
@@ -337,6 +345,7 @@ input, select, textarea {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
+		justify-content: center;
 		align-items: stretch;
 	}
 
@@ -658,7 +667,7 @@ input, select, textarea {
 				.row > .off-5-normal {
 					margin-left: 41.66667%;
 				}
-
+				
 				.row > .col-6-normal {
 					width: 50%;
 				}
@@ -899,7 +908,7 @@ input, select, textarea {
 				.row > .col-5-narrow {
 					width: 41.66667%;
 				}
-
+				
 				.row > .off-5-narrow {
 					margin-left: 41.66667%;
 				}
@@ -3183,3 +3192,5 @@ form label[for="terms"] {
 .image.featured {
     background: none !important;
 }
+
+
