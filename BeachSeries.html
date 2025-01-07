@@ -259,6 +259,19 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+		(function(d, t) {
+			var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+			v.onload = function() {
+			  window.voiceflow.chat.load({
+				verify: { projectID: '677b96d30ae2033c75a575f0' },
+				url: 'https://general-runtime.voiceflow.com',
+				versionID: 'production'
+			  });
+			}
+			v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+		})(document, 'script');
+	</script>
 
 </body>
 
