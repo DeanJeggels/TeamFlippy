@@ -216,18 +216,62 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
 	<script type="text/javascript">
-		(function(d, t) {
-			var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-			v.onload = function() {
-			  window.voiceflow.chat.load({
-				verify: { projectID: '677b96d30ae2033c75a575f0' },
-				url: 'https://general-runtime.voiceflow.com',
-				versionID: 'production'
-			  });
-			}
-			v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-		})(document, 'script');
-	</script>
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+                window.voiceflow.chat.load({
+                    verify: { projectID: '677b96d30ae2033c75a575f0' },
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production'
+                }).then(() => {
+                    // Define an array of messages
+                    const messages = [
+                        "Want to sign up for an event? Click Here!",
+                        "Have you read 'Swimming a Thousand Miles Upstream'?",
+                        "Sign up for the Coastal Beach Series today!",
+                        "Join us for the Neptune Splash in March!",
+                        "Get ready for the Mole to Mall Challenge!",
+                        "Don't miss the Blue & Pink Run on May 17th!",
+                        "Join us for the Lagoon Dream Run on June 14th!",
+                        "Get ready for Dune Run 7 on July 12th!",
+                        "Join us for the Salt Rush Run on August 9th!",
+                        "Sign up for the Namib Xtreme Triathlon on September 13th!",
+                        "Get ready for the Enduro Sprint on October 4th!",
+                        "Join us for the Deep Blue Challenge on November 8th!",
+                        "Sign up for the Open Water Splash on December 19th!",
+                        "TeamFlippy is founded by 2x Namibian Olympian, Phillip Seidler",
+                        "Discover more about TeamFlippy!",
+                        "Don't miss out on our upcoming events!",
+                        "What is TeamFlippy all about?",
+                        // "Explore our fitness tips on the blog!",
+                        "Join our community adventures and challenges!"
+                    ];
+        
+                    // Function to display a random message
+                    function displayRandomMessage() {
+                        // Clear previous proactive messages
+                        window.voiceflow.chat.proactive.clear();
+        
+                        // Select a random message
+                        const randomIndex = Math.floor(Math.random() * messages.length);
+                        const message = messages[randomIndex];
+        
+                        // Push the random message to the chat
+                        window.voiceflow.chat.proactive.push({
+                            type: 'text',
+                            payload: { message: message }
+                        });
+                    }
+        
+                    // Set an interval to display a random message every 10 seconds
+                    setInterval(displayRandomMessage, 10000);
+                });
+            };
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; 
+            v.type = "text/javascript"; 
+            s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+    </script>
 
 </body>
 

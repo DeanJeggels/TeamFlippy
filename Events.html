@@ -34,6 +34,14 @@
             text-align: center;
             margin: 20px auto;
         }
+
+        .vfrc-proactive-message {
+            background-color: #0687EF !important; /* Set the desired background color */
+            color: #FFFFFF !important; /* Set the text color to white */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
     </style>
 </head>
 
@@ -67,7 +75,7 @@
                             <section class="col-6 col-12-narrower feature">
 								
 								<div class="image-wrapper first">
-									<a href="BeachSeries.html" class="image featured first"><img src="images/events/posters/calender.jpeg" alt="BlackBeanie" /></a>
+									<a href="BeachSeries.html" class="image featured first"><img src="images/events/posters/Calender.jpeg" alt="BlackBeanie" /></a>
 								</div>
 		
 								
@@ -206,6 +214,11 @@
         </div>
     </div>
 
+    <div id="flippy-popup" class="flippy-popup">
+        <img src="images/teamflippy logo.png" alt="TeamFlippy Logo" class="flippy-logo" />
+        <div class="flippy-message">Ask about our upcoming event!</div>
+    </div>
+
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.dropotron.min.js"></script>
@@ -213,19 +226,134 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+                window.voiceflow.chat.load({
+                    verify: { projectID: '677b96d30ae2033c75a575f0' },
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production'
+                });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+    </script> -->
+
     <script type="text/javascript">
-		(function(d, t) {
-			var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-			v.onload = function() {
-			  window.voiceflow.chat.load({
-				verify: { projectID: '677b96d30ae2033c75a575f0' },
-				url: 'https://general-runtime.voiceflow.com',
-				versionID: 'production'
-			  });
-			}
-			v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-		})(document, 'script');
-	</script>
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+                window.voiceflow.chat.load({
+                    verify: { projectID: '677b96d30ae2033c75a575f0' },
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production'
+                }).then(() => {
+                    // Define an array of messages
+                    const messages = [
+                        "Want to sign up for an event? Click Here!",
+                        "Have you read 'Swimming a Thousand Miles Upstream'?",
+                        "Sign up for the Coastal Beach Series today!",
+                        "Join us for the Neptune Splash in March!",
+                        "Get ready for the Mole to Mall Challenge!",
+                        "Don't miss the Blue & Pink Run on May 17th!",
+                        "Join us for the Lagoon Dream Run on June 14th!",
+                        "Get ready for Dune Run 7 on July 12th!",
+                        "Join us for the Salt Rush Run on August 9th!",
+                        "Sign up for the Namib Xtreme Triathlon on September 13th!",
+                        "Get ready for the Enduro Sprint on October 4th!",
+                        "Join us for the Deep Blue Challenge on November 8th!",
+                        "Sign up for the Open Water Splash on December 19th!",
+                        "TeamFlippy is founded by 2x Namibian Olympian, Phillip Seidler",
+                        "Discover more about TeamFlippy!",
+                        "Don't miss out on our upcoming events!",
+                        "What is TeamFlippy all about?",
+                        // "Explore our fitness tips on the blog!",
+                        "Join our community adventures and challenges!"
+                    ];
+        
+                    // Function to display a random message
+                    function displayRandomMessage() {
+                        // Clear previous proactive messages
+                        window.voiceflow.chat.proactive.clear();
+        
+                        // Select a random message
+                        const randomIndex = Math.floor(Math.random() * messages.length);
+                        const message = messages[randomIndex];
+        
+                        // Push the random message to the chat
+                        window.voiceflow.chat.proactive.push({
+                            type: 'text',
+                            payload: { message: message }
+                        });
+                    }
+        
+                    // Set an interval to display a random message every 10 seconds
+                    setInterval(displayRandomMessage, 10000);
+                });
+            };
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; 
+            v.type = "text/javascript"; 
+            s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+    </script>
+    <!-- <script>
+        const messages = [
+            "Ask about our upcoming event!",
+            "Have you read 'Swimming a Thousand Miles Upstream'?",
+            "Sign up for the Coastal Beach Series today!",
+            "Join us for the Neptune Splash on March",
+            "Get ready for the Mole to Mall Challenge!",
+            "Don't miss the Blue & Pink Run on May 17th",
+            "Join us for the Lagoon Dream Run on June 14th",
+            "Get ready for Dune Run 7 on July 12th",
+            "Join us for the Salt Rush Run on August 9th",
+            "Sign up for the Namib Xtreme Triathlon on September 13th",
+            "Get ready for the Enduro Sprint on October 4th",
+            "Join us for the Deep Blue Challenge on November 8th",
+            "Sign up for the Open Water Splash on December 19th",
+            "TeamFlippy is founded by 2x Namibian Olympian, Phillip Seidler",
+        ];
+    
+        let currentMessageIndex = 0;
+    
+        function showFlippyPopup() {
+            const popup = document.getElementById('flippy-popup');
+            const messageDiv = popup.querySelector('.flippy-message');
+            const chatWidget = document.querySelector('.vfrc-widget');
+    
+            if (!chatWidget) {
+                console.log('Chat widget not found');
+                return; // Exit if the chat widget is not found
+            }
+    
+            // Debugging: Log the class list to verify the current state
+            console.log('Chat widget classes:', chatWidget.className);
+    
+            // Check if the chat widget is open
+            if (chatWidget.classList.contains('c-ivtLaR-gAaWLG-withChat-true')) {
+                console.log('Chat is open, not showing popup');
+                return; // Exit the function if the chat is open
+            }
+    
+            // Update the message
+            messageDiv.textContent = messages[currentMessageIndex];
+    
+            // Show the popup
+            popup.classList.add('show');
+    
+            // Hide the popup after 3 seconds
+            setTimeout(() => {
+                popup.classList.remove('show');
+            }, 3000);
+    
+            // Update the message index
+            currentMessageIndex = (currentMessageIndex + 1) % messages.length;
+        }
+    
+        // Check for the chat widget and show the popup every 10 seconds
+        setInterval(showFlippyPopup, 10000);
+    </script> -->
 
 </body>
 
