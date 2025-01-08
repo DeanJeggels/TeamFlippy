@@ -206,7 +206,7 @@
 	<script src="assets/js/extensions.js"></script>
 
 	<script type="module">
-	import { FileUploadExtension } from 'assets/js/extensions.js';
+	// import { FileUploadExtension } from 'assets/js/extensions.js';
         (function(d, t) {
             var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
             v.onload = function() {
@@ -216,11 +216,11 @@
                     versionID: 'production',
 					// autostart: false,
 					// allowDangerousHtml: true,
-					assistant: {
-						extensions: [
-							FileUploadExtension,
-						],	
-					},
+					// assistant: {
+					// 	extensions: [
+					// 		FileUploadExtension,
+					// 	],	
+					// },
                 }).then(() => {
                     // Define an array of messages
                     const messages = [
